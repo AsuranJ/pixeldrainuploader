@@ -15,7 +15,7 @@ Bot = Client(
 @Bot.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
     await update.reply_text(
-        text=f"Hello {update.from_user.mention}, Please send a media for pixeldrain.com stream link.\n\nMade by @FayasNoushad",
+        text=f"Hello {update.from_user.mention}, Please send a media for pixeldrain.com stream link.\n\nMade by @JAsuran123",
         disable_web_page_preview=True,
         quote=True
     )
@@ -87,15 +87,15 @@ async def media_filter(bot, update):
         return
     
     # pixeldrain data
-    text = f"**File Name:** `{data['name']}`" + "\n"
-    text += f"**Download Page:** `https://pixeldrain.com/u/{data['id']}`" + "\n"
-    text += f"**Direct Download Link:** `https://pixeldrain.com/api/file/{data['id']}`" + "\n"
-    text += f"**Upload Date:** `{data['date_upload']}`" + "\n"
-    text += f"**Last View Date:** `{data['date_last_view']}`" + "\n"
+    text = f"**File Name:** `{data['name']}`" + "\n\n"
+    text += f"**Download Page:** https://pixeldrain.com/u/{data['id']}" + "\n\n"
+    text += f"**Direct Download Link:** https://pixeldrain.com/api/file/{data['id']}" + "\n"
+    #text += f"**Upload Date:** `{data['date_upload']}`" + "\n"
+    #text += f"**Last View Date:** `{data['date_last_view']}`" + "\n"
     text += f"**Size:** `{data['size']}`" + "\n"
-    text += f"**Total Views:** `{data['views']}`" + "\n"
-    text += f"**Bandwidth Used:** `{data['bandwidth_used']}`" + "\n"
-    text += f"**Mime Type:** `{data['mime_type']}`"
+    #text += f"**Total Views:** `{data['views']}`" + "\n"
+    #text += f"**Bandwidth Used:** `{data['bandwidth_used']}`" + "\n"
+    #text += f"**Mime Type:** `{data['mime_type']}`"
     reply_markup = InlineKeyboardMarkup(
         [
             [
@@ -109,7 +109,7 @@ async def media_filter(bot, update):
                 )
             ],
             [
-                InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/FayasNoushad")
+                InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/SerialCoIn005")
             ]
         ]
     )
