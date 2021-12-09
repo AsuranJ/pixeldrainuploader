@@ -89,7 +89,7 @@ async def media_filter(bot, update):
     # pixeldrain data
     text = f"**File Name:** `{data['name']}`" + "\n\n"
     text += f"**Download Page:** https://pixeldrain.com/u/{data['id']}" + "\n\n"
-    text += f"**Direct Download Link:** https://pixeldrain.com/api/file/{data['id']}" + "\n"
+    text += f"**Direct Download Link:** https://pixeldrain.com/api/file/{data['id']}" + "\n\n"
     #text += f"**Upload Date:** `{data['date_upload']}`" + "\n"
     #text += f"**Last View Date:** `{data['date_last_view']}`" + "\n"
     text += f"**Size:** `{data['size']}`" + "\n"
