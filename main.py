@@ -109,7 +109,7 @@ async def media_filter(bot, update):
                 )
             ],
             [
-                InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/SerialCoIn005")
+                InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/Jasuranbots")
             ]
         ]
     )
